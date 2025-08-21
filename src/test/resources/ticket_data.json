@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Coffee Shop Receipt",
+    "description": "Achieng’ runs a small café in Kisumu. At the end of each sale, she wants a program that asks for the prices of items purchased and then prints the total bill along with tax.",
+    "domain": "Business"
+  },
+  {
+    "id": 2,
+    "title": "Train Ticket Calculator",
+    "description": "Kamau is building a ticket system for the Nairobi–Mombasa SGR. The program should take a passenger’s age and distance of travel, then calculate the fare (children get 50% off, seniors get 30% off).",
+    "domain": "Transport"
+  },
+  {
+    "id": 3,
+    "title": "Student Grader",
+    "description": "Wanjiru is a teacher in Nakuru who spends hours grading. She wants a program where she enters a student’s marks, and the program prints their grade (A, B, C, etc.).",
+    "domain": "Education"
+  },
+  {
+    "id": 4,
+    "title": "Password Checker",
+    "description": "Otieno often sets weak passwords and forgets them. He wants a program that asks the user to enter a password and checks if it is at least 8 characters long. If not, the program should warn him.",
+    "domain": "Security"
+  },
+  {
+    "id": 5,
+    "title": "Temperature Converter",
+    "description": "Chebet is traveling to the U.S. and struggles with Fahrenheit vs Celsius. She wants a small program where she can type a temperature in Celsius and get it converted to Fahrenheit (and vice versa).",
+    "domain": "Utility"
+  },
+  {
+    "id": 6,
+    "title": "Number Guessing Game",
+    "description": "Mwangi is bored while waiting in traffic. He wants a program that randomly picks a number between 1 and 100, and the user has to guess it. The program should give hints ('too high' or 'too low').",
+    "domain": "Entertainment"
+  },
+  {
+    "id": 7,
+    "title": "Bank ATM Simulator",
+    "description": "Amina is designing a mini ATM system for her ICT class project. She wants a program that lets users check balance, deposit money, and withdraw money (with checks so balance never goes negative).",
+    "domain": "Finance"
+  }
+]
