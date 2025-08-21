@@ -20,3 +20,5 @@ buildNumber.properties
 null
 test_tickets_db
 tickets_db
+dependency-reduced-pom.xml
+README.md.bak

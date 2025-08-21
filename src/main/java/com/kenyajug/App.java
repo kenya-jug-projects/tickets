@@ -22,14 +22,20 @@ package com.kenyajug;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kenyajug.core.DatabaseManager;
 import com.kenyajug.tickets.TicketRepository;
+import com.kenyajug.tickets.TicketsDashboard;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 import lombok.extern.slf4j.Slf4j;
 import java.io.IOException;
 import java.sql.SQLException;
 @Slf4j
-public class App {
+public class App extends Application {
     public static void main(String[] args) throws SQLException, IOException {
         System.out.println("initializing database...");
         DatabaseManager.createDatabase();
@@ -38,5 +44,16 @@ public class App {
         System.out.println("finished initializing database ✅");
         var ticket = ticketsRepository.randomTicket();
         System.out.println("Ticker\n" + new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(ticket));
+        System.out.println("Launching App UI...");
+        launch(args);
+    }
+    @Override
+    public void start(Stage primaryStage) {
+        var ticketsRepository = new TicketRepository();
+        var dashboardView = new TicketsDashboard(ticketsRepository);
+        var scene = new Scene(dashboardView,1200,850, Color.BLACK);
+        primaryStage.setTitle("Kenya JUG Tickets 🇰🇪");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }
